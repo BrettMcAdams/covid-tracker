@@ -1,0 +1,66 @@
+
+.table {
+    margin-top: 20px;
+    overflow: scroll;
+    color: rgb(174, 174, 174);
+    background-color:#424242;
+    height: 300px;
+    overflow-x: hidden;  
+    border: 1px solid black;
+    border-radius: 1%;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #b8b8b8; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+.table tr {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+  
+.table td {
+    border: none;
+    line-height: 25px;
+    width: 100px;
+    text-align: right;
+}
+
+.tableHeader {
+  background-color: rgb(33, 36, 40);
+}
+
+.table .countryName {
+  color: #a92323;
+  width: 60px;
+  text-align: left;
+}
+
+
+
+
+
+@media (max-width: 990px) {
+  tr > .pop {
+    display: none;
+  }
+  tr > .act {
+    display: none;
+  }
+}
+  

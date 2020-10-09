@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.background {
+  background: slategray;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  height: 5.5vh;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(47, 49, 52);
+  z-index: 500;
+}
+
+.app__header > h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #c93131;
+  font-size: 2rem;
+}
+
+.icon {
+  height: 60px;
+  width: 60px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(46, 46, 46);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 100%;
+}
+
+
+
+.app__dropdown {
+  background-color: rgb(143, 143, 143);
+}
+
+.app__stats {
+  display: flex;
+}
+
+.app__left {
+  width: 95%;
+  padding-bottom: 10px;
+}
+
+.app__right {
+  height: 100%;
+  width: 95%;
+}
+
+.app__information > h3 {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 990px) {
+  .app__left {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .app__header > h1 {
+    display: none;
+  }
+  .app__header {
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .app__stats {
+    margin-top: 15px;
+  }
+}
